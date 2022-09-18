@@ -24,6 +24,41 @@ local bwA = {
     { trig = "item", name = "Itemize" },
     { t({ "\\begin{itemize}", "\t\\item "}), i(1), t({ "", "\\end{itemize}" }) }
   ),
+    s("sec", {
+    t({ "\\section*{" }),
+    i(1),
+    t({ "}", "" }),
+  }),
+
+  s("ss", {
+    t({ "\\subsection*{" }),
+    i(1),
+    t({ "}", "" }),
+  }),
+
+  s("sss", {
+    t({ "\\subsubsection*{" }),
+    i(1),
+    t({ "}", "" }),
+  }),
+
+  s("arr", {
+    t({ "\\begin{displaymath}", "\t\\begin{array}{" }),
+    i(1),
+    t({ "}",
+      "", "\\end{displaymath}" }),
+  }),
+
+  s("ls", {
+    t({ "\\begin{itemize}", "\t\\item " }),
+    i(1),
+    t({ "", "\\end{itemize}" }),
+  }),
+
+  s("it", {
+    t({ "\\item " }),
+  }),
+
 
   ls.parser.parse_snippet(
     { trig = "beg", name = "begin{} / end{}" },
