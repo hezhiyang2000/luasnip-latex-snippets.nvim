@@ -7,7 +7,7 @@ local math_i = {
   ),
 
   ls.parser.parse_snippet(
-    { trig = "taylor", name = "taylor" },
+    { trig = "\\taylor", name = "taylor" },
     "\\sum_{${1:k}=${2:0}}^{${3:\\infty}} ${4:c_$1} (x-a)^$1 $0"
   ),
 
