@@ -11,9 +11,9 @@ local normal_wA = {
       [[
         %! TEX TS-program = xelatex
         \PassOptionsToPackage{quiet}{fontspec}
-        \documentclass[utf8]{ctexart}
+        \documentclass{ctexart}
         \usepackage{amsmath, amssymb}
-        \usepackage[]{fontspec}
+        \usepackage{fontspec}
 
         \\begin{document}
           $0

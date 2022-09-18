@@ -8,6 +8,22 @@ local bwA = {
     { trig = "ali", name = "Align" },
     { t({ "\\begin{align*}", "\t" }), i(1), t({ "", ".\\end{align*}" }) }
   ),
+  s(
+    { trig = "Ali", name = "Align (numbered)" },
+    { t({ "\\begin{align}", "\t" }), i(1), t({ "", ".\\end{align}" }) }
+  ),
+  s(
+    { trig = "frame", name = "Frame" },
+    { t({ "\\begin{frame}{"}), i(1), t({"}", "\t"}), i(2), t({ "", "\\end{frame}" }) }
+  ),
+  s(
+    { trig = "enum", name = "Enumerate" },
+    { t({ "\\begin{enumerate}", "\t\\item "}), i(1), t({ "", "\\end{enumerate}" }) }
+  ),
+  s(
+    { trig = "item", name = "Itemize" },
+    { t({ "\\begin{itemize}", "\t\\item "}), i(1), t({ "", "\\end{itemize}" }) }
+  ),
 
   ls.parser.parse_snippet(
     { trig = "beg", name = "begin{} / end{}" },

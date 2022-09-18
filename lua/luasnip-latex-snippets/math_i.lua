@@ -67,6 +67,11 @@ local math_i = {
   ),
 
   ls.parser.parse_snippet(
+    { trig = "lr||", name = "left\\|| right\\||" },
+    "\\left\\| ${1:${TM_SELECTED_TEXT}} \\right\\|} $0"
+  ),
+
+  ls.parser.parse_snippet(
     { trig = "sequence", name = "Sequence indexed by n, from m to infinity" },
     "(${1:a}_${2:n})_{${2:n}=${3:m}}^{${4:\\infty}}"
   ),
