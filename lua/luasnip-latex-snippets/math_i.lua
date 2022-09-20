@@ -7,7 +7,7 @@ local math_i = {
 --   ),
 --
 --   ls.parser.parse_snippet(
---     { trig = "\\taylor", name = "taylor" },
+--     { trig = "taylor", name = "taylor" },
 --     "\\sum_{${1:k}=${2:0}}^{${3:\\infty}} ${4:c_$1} (x-a)^$1 $0"
 --   ),
 --
@@ -75,6 +75,6 @@ local math_i = {
 --     { trig = "sequence", name = "Sequence indexed by n, from m to infinity" },
 --     "(${1:a}_${2:n})_{${2:n}=${3:m}}^{${4:\\infty}}"
 --   ),
--- }
---
+}
+
 return math_i
